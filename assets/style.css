@@ -16,35 +16,29 @@ body {
 	z-index: 1000;
 	display: flex;
 	justify-content: space-between;
-	padding-inline: 100px;
-	padding-block: 30px;
+	padding-inline: 6.25rem;
+	padding-block: 1.875rem;
 	align-items: center;
 }
-
 .top-header .name {
 	font-size: 1.6rem;
 }
-
 .nav ul {
 	display: flex;
 	list-style-type: none;
 	font-size: 0.9rem;
 	margin-bottom: 0;
 }
-
 .nav li {
 	padding-inline: 0.6rem;
 }
-
 .nav a {
 	text-decoration: none;
 	color: #000;
 }
-
 .social-link img {
 	width: 1.25rem;
 }
-
 #about {
 	display: flex;
 	background-color: #f6d2b8;
@@ -52,7 +46,6 @@ body {
 	padding-block: 6.25rem;
 	position: relative;
 }
-
 .picture.left::before {
 	content: " ";
 	background-color: #e5975f;
@@ -63,13 +56,11 @@ body {
 	left: 0;
 	z-index: -1;
 }
-
 .picture {
 	flex: 1;
 	margin: 0 1.25rem;
 	z-index: 0;
 }
-
 .picture img {
 	width: 100%;
 }
@@ -91,7 +82,6 @@ body {
 	width: 80%;
 	font-size: 0.875rem;
 }
-
 #gallery {
 	min-height: 100vh;
 }
@@ -105,11 +95,15 @@ body {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
 	color: #fff;
-	background-color: #beb45a;
+	background-color: #796d01;
 	border-radius: 0;
 }
 .nav-pills .nav-link {
 	color: #000;
+}
+.carousel-inner img{
+width: 100%;
+height: auto;
 }
 .item-column {
 	position: relative;
@@ -138,9 +132,7 @@ body {
 	display: flex;
 	font-size: 1.5rem;
 }
-
 .quote {
-	font-family: "Spectral";
 	font-style: italic;
 	width: 70%;
 	margin: auto;
@@ -158,7 +150,6 @@ body {
 	font-weight: 800;
 	font-size: 1.375rem;
 }
-
 #services {
 	margin: auto;
 	background-color: #a8d5d8;
@@ -174,13 +165,11 @@ body {
 	left: 0;
 	z-index: 0;
 }
-
 #services .container {
 	justify-content: space-between;
 	display: flex;
 	padding: 2em 0;
 }
-
 .service {
 	background-color: white;
 	max-width: 24.375rem;
@@ -192,7 +181,6 @@ body {
 	justify-content: space-between;
 	z-index: 1;
 }
-
 #contact {
 	margin: auto;
 	background-color: #d8d3a8;
@@ -200,7 +188,6 @@ body {
 	padding-inline: 6.25rem;
 	padding-block: 6.25rem;
 }
-
 #contact .container {
 	display: flex;
 }
@@ -223,7 +210,6 @@ form {
 	width: 70%;
 	align-items: flex-start;
 }
-
 form input {
 	width: 100%;
 	background-color: transparent;
@@ -231,7 +217,6 @@ form input {
 	height: 2.5em;
 	margin-bottom: 1.25rem;
 }
-
 form textarea {
 	width: 100%;
 	background-color: transparent;
@@ -245,7 +230,6 @@ input[type="submit"] {
 	background-color: #beb45a;
 	padding: 0.5em 1em;
 }
-
 @media all and (max-width: 1180px) {
 	.picture {
 		flex: 2;
@@ -263,7 +247,6 @@ input[type="submit"] {
 		width: 100%;
 	}
 }
-
 @media all and (max-width: 1000px) {
 	#about {
 		flex-direction: column;
@@ -296,7 +279,6 @@ input[type="submit"] {
 	.service__description {
 		margin-bottom: 1em;
 	}
-
 	#services .container::before {
 		width: 30%;
 		height: 100%;
@@ -305,7 +287,6 @@ input[type="submit"] {
 		left: auto;
 		z-index: 0;
 	}
-
 	#contact .container {
 		flex-direction: column;
 	}
@@ -321,7 +302,6 @@ input[type="submit"] {
 		z-index: -1;
 	}
 }
-
 @media all and (max-width: 650px) {
 	.top-header {
 		flex-direction: column;
