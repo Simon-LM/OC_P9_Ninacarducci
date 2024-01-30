@@ -71,8 +71,6 @@ a {
 	height: 450px;
 }
 #about-me {
-	width: 100%;
-	height: auto;
 	flex: 2;
 }
 .about-me__title {
@@ -85,7 +83,7 @@ a {
 	font-weight: 800;
 	font-style: italic;
 	font-size: 1rem;
-	width: 60%;
+	width: 90%;
 }
 #about-me p {
 	width: 80%;
