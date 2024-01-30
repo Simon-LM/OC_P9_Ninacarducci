@@ -39,7 +39,7 @@ a {
 	width: auto;
 }
 .w-100 {
-	width: 100%;
+	width: 1600px;
 	height: auto;	
 }
 #about {
@@ -47,8 +47,7 @@ a {
 	background-color: #f6d2b8;
 	width: 100%;
 	height: auto;
-	padding-inline: 100px;
-	padding-block: 100px;
+	padding: 100px;
 	position: relative;
 }
 .picture.left::before {
@@ -63,7 +62,7 @@ a {
 }
 .picture {
 	flex: 1;
-	margin: 0 1rem;
+	margin: 0 20px;
 	z-index: 0;
 }
 .picture img {
