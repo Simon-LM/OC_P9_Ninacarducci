@@ -35,11 +35,11 @@ a {
 	gap: 1em;
 }
 .social-link img {
-	height:1.4em;
-	width: auto;
+	height:20px;
+	width: 20px;
 }
 .w-100 {
-	width: 1600px;
+	width: 100%;
 	height: auto;	
 }
 #about {
