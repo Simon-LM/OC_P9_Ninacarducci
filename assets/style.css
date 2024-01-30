@@ -176,7 +176,8 @@ a {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	gap: 6rem;
+	/* gap: 6rem; */
+	height: 337px;
 	background-color: white;
 	max-width: 390px;
 	width: 30%;
@@ -187,7 +188,7 @@ a {
 	margin: auto;
 	background-color: #d8d3a8;
 	position: relative;
-	padding: 6.25rem;
+	padding: 100px;
 }
 #contact .container {
 	display: flex;
@@ -229,7 +230,7 @@ form textarea {
 }
 input[type="submit"] {
 	background-color: #beb45a;
-	padding: 0.5em 1em;
+	padding: .5em 1em;
 }
 @media all and (max-width: 1180px) {
 	.picture {
@@ -309,7 +310,7 @@ input[type="submit"] {
 	.top-header .nav,
 	.top-header .nav ul {
 		width: 100%;
-		padding: 0 0 0 0;
+		padding: 0;
 	}
 	.top-header .nav li {
 		flex: 1;
@@ -318,7 +319,7 @@ input[type="submit"] {
 	}
 	.picture.left::before,
 	.picture.right::before {
-		height: 9.375rem;
+		height: 150px;
 	}
 	#services .container {
 		align-items: center;
@@ -327,8 +328,7 @@ input[type="submit"] {
 		max-width: 90%;
 	}
 	#about,	#contact {
-		padding-inline: 2em;
-		padding-block: 2em;
+		padding: 2em;
 	}
 	form {
 		width: 100%;
