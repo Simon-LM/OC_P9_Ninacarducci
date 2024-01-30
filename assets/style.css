@@ -38,6 +38,11 @@ body {
 }
 .social-link img {
 	width: 1.25rem;
+	height: 1.25rem;
+}
+.w-100 {
+	width: 1600px;
+	height: auto;
 }
 #about {
 	display: flex;
@@ -47,7 +52,7 @@ body {
 	position: relative;
 }
 .picture.left::before {
-	content: " ";
+	content: ' ';
 	background-color: #e5975f;
 	width: 23.375rem;
 	height: 20.56rem;
@@ -62,18 +67,19 @@ body {
 	z-index: 0;
 }
 .picture img {
-	width: 100%;
+	width: 28rem;
+	height: 28rem;
 }
 #about-me {
 	flex: 2;
 }
 .about-me__title {
 	margin-top: 1em;
-	margin-bottom: 60px;
-	font-size: 30px;
+	margin-bottom: 3.75rem;
+	font-size: 1.875rem;
 }
 .about-me__introduction {
-	font-family: "Spectral";
+	font-family: 'Spectral';
 	font-weight: 800;
 	font-style: italic;
 	font-size: 1rem;
@@ -81,9 +87,6 @@ body {
 #about-me p {
 	width: 80%;
 	font-size: 0.875rem;
-}
-#gallery {
-	min-height: 100vh;
 }
 .title {
 	text-align: center;
@@ -100,10 +103,6 @@ body {
 }
 .nav-pills .nav-link {
 	color: #000;
-}
-.carousel-inner img{
-width: 100%;
-height: auto;
 }
 .item-column {
 	position: relative;
@@ -122,8 +121,7 @@ height: auto;
 	object-fit: cover;
 	padding: 0.5em;
 }
-.mg-prev,
-.mg-next {
+.mg-prev, .mg-next{
 	width: 30px;
 	height: 30px;
 	border-radius: 00%;
@@ -192,7 +190,7 @@ height: auto;
 	display: flex;
 }
 .picture.right::before {
-	content: " ";
+	content: ' ';
 	background-color: #beb45a;
 	width: 23.375rem;
 	height: 20.56rem;
@@ -234,16 +232,14 @@ input[type="submit"] {
 	.picture {
 		flex: 2;
 	}
-	#about,
-	#contact .container {
+	#about,	#contact .container {
 		align-items: center;
 	}
 	.about-me__title {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-	#about-me h6,
-	#about-me p {
+	#about-me h6, #about-me p {
 		width: 100%;
 	}
 }
@@ -327,8 +323,7 @@ input[type="submit"] {
 	.service {
 		max-width: 90%;
 	}
-	#about,
-	#contact {
+	#about,	#contact {
 		padding-inline: 2em;
 		padding-block: 2em;
 	}
