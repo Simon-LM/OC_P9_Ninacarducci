@@ -1,9 +1,6 @@
-/** @format */
-
 body {
 	font-size: 1rem;
 	max-width: 1920px;
-	margin: auto;
 }
 * {
 	font-family: "Inter";
@@ -16,8 +13,8 @@ body {
 	z-index: 1000;
 	display: flex;
 	justify-content: space-between;
-	padding-inline: 6.25rem;
-	padding-block: 1.875rem;
+	padding-inline: 100px;
+	padding-block: 30px;
 	align-items: center;
 }
 .top-header .name {
@@ -30,32 +27,31 @@ body {
 	margin-bottom: 0;
 }
 .nav li {
-	padding-inline: 0.6rem;
+	padding-inline: 10px;
 }
 .nav a {
 	text-decoration: none;
 	color: #000;
 }
 .social-link img {
-	width: 1.25rem;
-	height: 1.25rem;
+	width: 20px;
+	height: 20px;
 }
 .w-100 {
 	width: 1600px;
-	height: auto;
 }
 #about {
 	display: flex;
 	background-color: #f6d2b8;
-	padding-inline: 6.25rem;
-	padding-block: 6.25rem;
+	padding-inline: 100px;
+	padding-block: 100px;
 	position: relative;
 }
 .picture.left::before {
 	content: ' ';
 	background-color: #e5975f;
-	width: 23.375rem;
-	height: 20.56rem;
+	width: 374px;
+	height: 329px;
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -63,12 +59,12 @@ body {
 }
 .picture {
 	flex: 1;
-	margin: 0 1.25rem;
+	margin: 0 20px;
 	z-index: 0;
 }
 .picture img {
-	width: 28rem;
-	height: 28rem;
+	width: 450px;
+	height: 450px;
 }
 #about-me {
 	flex: 2;
@@ -79,7 +75,7 @@ body {
 	font-size: 1.875rem;
 }
 .about-me__introduction {
-	font-family: 'Amethysta';
+	font-family: 'Spectral';
 	font-weight: 800;
 	font-style: italic;
 	font-size: 1rem;
@@ -137,14 +133,14 @@ body {
 	padding-block: 3em;
 }
 .quote__text {
-	font-family: Amethysta;
+	font-family: 'Spectral';
 	font-style: italic;
 	font-weight: 300;
 	font-size: 2.5rem;
 	line-height: 1.2em;
 }
 .quote__author {
-	font-family: Amethysta;
+	font-family: 'Spectral';
 	font-weight: 800;
 	font-size: 1.375rem;
 }
@@ -170,9 +166,9 @@ body {
 }
 .service {
 	background-color: white;
-	max-width: 24.375rem;
+	max-width: 390px;
 	width: 30%;
-	height: 21rem;
+	height: 337px;
 	padding: 1em;
 	display: flex;
 	flex-direction: column;
@@ -183,8 +179,8 @@ body {
 	margin: auto;
 	background-color: #d8d3a8;
 	position: relative;
-	padding-inline: 6.25rem;
-	padding-block: 6.25rem;
+	padding-inline: 100px;
+	padding-block: 100px;
 }
 #contact .container {
 	display: flex;
@@ -192,8 +188,8 @@ body {
 .picture.right::before {
 	content: ' ';
 	background-color: #beb45a;
-	width: 23.375rem;
-	height: 20.56rem;
+	width: 374px;
+	height: 329px;
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -213,7 +209,7 @@ form input {
 	background-color: transparent;
 	border: solid 1px;
 	height: 2.5em;
-	margin-bottom: 1.25rem;
+	margin-bottom: 20px;
 }
 form textarea {
 	width: 100%;
@@ -222,7 +218,7 @@ form textarea {
 	height: 5em;
 	line-height: 2.5em;
 	font-size: 1.2em;
-	margin-bottom: 1.25rem;
+	margin-bottom: 20px;
 }
 input[type="submit"] {
 	background-color: #beb45a;
