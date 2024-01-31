@@ -23,8 +23,8 @@ a {
 }
 .top-header .name {
 	display: flex;
+	width: 100%;
 	height: auto;
-	width: auto;
 	font-size: 1.6rem;
 }
 .nav ul {
@@ -35,8 +35,8 @@ a {
 	gap: 1em;
 }
 .social-link img {
-	height:20px;
-	width: 20px;
+	height:1.4em;
+	width: auto;
 }
 .w-100 {
 	width: 100%;
@@ -106,17 +106,18 @@ a {
 .nav-pills .nav-link {
 	color: black;
 }
-.item-column {
-	position: relative;
-	margin-bottom: 0;
-	padding: 0;
-}
 .gallery-item {
-	position: absolute;
-	width: 450px;
-	height: 450px;
+	height: 380px;
+	width: 100%;
 	object-fit: cover;
-	padding: 0.5em;
+	/* margin-bottom: -1.5rem; */
+	background: blue;
+}
+.item-column {
+	width: 380px;
+	/* height: 100%; */
+	padding: 0.5rem;
+	background: green;	
 }
 .mg-prev, .mg-next{
 	width: 30px;
