@@ -106,19 +106,41 @@ a {
 .nav-pills .nav-link {
 	color: black;
 }
+
+.item-column {
+	position: relative;
+	margin-bottom: 0 !important;
+	padding: 0;
+}
+.item-column::after{
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+
+}
 .gallery-item {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	padding: .5em;
+}
+
+/* .gallery-item {
 	height: 380px;
 	width: 100%;
 	object-fit: cover;
-	/* margin-bottom: -1.5rem; */
+	margin-bottom: -1.5rem;
 	background: blue;
 }
 .item-column {
 	width: 380px;
-	/* height: 100%; */
+	height: 100%;
 	padding: 0.5rem;
 	background: green;	
-}
+} */
+
+
 .mg-prev, .mg-next{
 	width: 30px;
 	height: 30px;
