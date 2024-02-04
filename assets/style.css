@@ -38,14 +38,16 @@ a {
 	height:1.4em;
 	width: auto;
 }
-.carousel-inner{
+.carousel {
 	object-fit: cover;
 	width: 100%;
+	aspect-ratio: 1000/462;
+}
+.carousel-inner{
+	width: 100%;
 	height: auto;
-	
 }
 .carousel-item{
-	object-fit: cover;
 	width: 100%;
 	height: auto;
 }
@@ -133,6 +135,9 @@ a {
 	height: 100%;
 	object-fit: cover;
 	padding: .5em;
+}
+.gallery img {
+	cursor: pointer;
 }
 .mg-prev, .mg-next{
 	width: 30px;
