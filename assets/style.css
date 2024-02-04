@@ -35,8 +35,8 @@ a {
 	gap: 1em;
 }
 .social-link img {
-	height:1.4em;
-	width: auto;
+	aspect-ratio: 1/1;
+	height: 1.2rem;
 }
 .carousel {
 	object-fit: cover;
@@ -71,8 +71,8 @@ a {
 	z-index: 0;
 }
 .picture img {
+	aspect-ratio: 1/1;
 	width: 100%;
-	height: auto;
 }
 #about-me {
 	width: 100%;
