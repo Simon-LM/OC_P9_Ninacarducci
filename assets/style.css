@@ -15,15 +15,15 @@ a {
 	background-color: white;
 	position: sticky;
 	top: 0;
-	z-index: 1000;
+	z-index: 2;
 	display: flex;
 	justify-content: space-between;
-	padding-inline: 100px;
-	padding-block: 30px;
+	padding: 1.875rem 6.25rem;
 	align-items: center;
 }
 .top-header .name {
 	display: flex;
+	flex: auto;
 	height: auto;
 	font-size: 1.6rem;
 }
@@ -45,14 +45,14 @@ a {
 }
 .w-100 {
 	width: 100%;
-	height: auto;	
+	height: auto;
 }
 #about {
 	display: flex;
 	background-color: #f6d2b8;
 	width: 100%;
 	height: auto;
-	padding: 100px;
+	padding: 6.25rem;
 	position: relative;
 }
 .picture.left::before {
@@ -67,7 +67,7 @@ a {
 }
 .picture {
 	flex: 1;
-	margin: 0 20px;
+	margin: 0 1.25rem;
 	z-index: 0;
 }
 .picture img {
@@ -81,7 +81,7 @@ a {
 }
 .about-me__title {
 	margin-top: 1em;
-	margin-bottom: 60px;
+	margin-bottom: 3.75rem;
 	font-size: 1.875rem;
 }
 .about-me__introduction {
@@ -93,13 +93,18 @@ a {
 }
 #about-me p {
 	width: 80%;
+	height: auto;
 	font-size: 0.875rem;
 }
 .title {
+	width: 100%;
+	height: auto;
 	text-align: center;
 	padding-block: 2em;
 }
 .gallery .nav {
+	width: 100%;
+	height: auto;
 	justify-content: center;
 }
 .nav-pills .nav-link.active,
@@ -115,10 +120,14 @@ a {
 .item-column {
 	position: relative;
 	margin-bottom: 0 !important;
+	padding: 0;
 }
 .item-column::after{
 	content: "";
 	display: block;
+	aspect-ratio: 1/1;
+	width: 100%;
+	height: auto;
 	padding-bottom: 100%;
 }
 .gallery-item {
@@ -131,17 +140,10 @@ a {
 .gallery img {
 	cursor: pointer;
 }
-.mg-prev, .mg-next{
-	width: 30px;
-	height: 30px;
-	justify-content: center;
-	align-items: center;
-	display: flex;
-	font-size: 1.5rem;
-}
 .quote {
 	font-style: italic;
 	width: 70%;
+	height: auto;
 	margin: auto;
 	padding-block: 3em;
 }
@@ -192,7 +194,7 @@ a {
 	margin: auto;
 	background-color: #d8d3a8;
 	position: relative;
-	padding: 100px;
+	padding: 6.25rem;
 }
 #contact .container {
 	display: flex;
@@ -221,7 +223,7 @@ form input {
 	background-color: transparent;
 	border: solid 1px;
 	height: 2.5em;
-	margin-bottom: 20px;
+	margin-bottom: 1.25rem;
 }
 form textarea {
 	width: 100%;
@@ -230,7 +232,7 @@ form textarea {
 	height: 5em;
 	line-height: 2.5em;
 	font-size: 1.2em;
-	margin-bottom: 20px;
+	margin-bottom: 1.25rem;
 }
 input[type="submit"] {
 	background-color: #beb45a;
