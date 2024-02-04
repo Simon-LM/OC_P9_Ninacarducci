@@ -100,7 +100,7 @@ a {
 	width: 100%;
 	height: auto;
 	text-align: center;
-	padding-block: 2em;
+	padding: 2em 0;
 }
 .gallery .nav {
 	width: 100%;
@@ -145,7 +145,7 @@ a {
 	width: 70%;
 	height: auto;
 	margin: auto;
-	padding-block: 3em;
+	padding: 3em 0;
 }
 .quote__text {
 	font-family: 'Spectral';
@@ -320,7 +320,7 @@ input[type="submit"] {
 	}
 	.top-header .nav li {
 		flex: 1;
-		padding-block: 1em;
+		padding: 1em inherit;
 		text-align: center;
 	}
 	.picture.left::before,
