@@ -1,6 +1,7 @@
 body {
 	font-size: 1rem;
 	max-width: 1920px;
+	height: auto;
 	margin: auto;
 }
 * {
@@ -23,7 +24,6 @@ a {
 }
 .top-header .name {
 	display: flex;
-	width: 100%;
 	height: auto;
 	font-size: 1.6rem;
 }
@@ -37,6 +37,17 @@ a {
 .social-link img {
 	height:1.4em;
 	width: auto;
+}
+.carousel-inner{
+	object-fit: cover;
+	width: 100%;
+	height: auto;
+	
+}
+.carousel-item{
+	object-fit: cover;
+	width: 100%;
+	height: auto;
 }
 .w-100 {
 	width: 100%;
@@ -105,18 +116,16 @@ a {
 }
 .nav-pills .nav-link {
 	color: black;
+	cursor: pointer;
 }
-
 .item-column {
 	position: relative;
 	margin-bottom: 0 !important;
-	padding: 0;
 }
 .item-column::after{
 	content: "";
 	display: block;
 	padding-bottom: 100%;
-
 }
 .gallery-item {
 	position: absolute;
@@ -125,22 +134,6 @@ a {
 	object-fit: cover;
 	padding: .5em;
 }
-
-/* .gallery-item {
-	height: 380px;
-	width: 100%;
-	object-fit: cover;
-	margin-bottom: -1.5rem;
-	background: blue;
-}
-.item-column {
-	width: 380px;
-	height: 100%;
-	padding: 0.5rem;
-	background: green;	
-} */
-
-
 .mg-prev, .mg-next{
 	width: 30px;
 	height: 30px;
