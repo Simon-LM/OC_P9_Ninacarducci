@@ -43,14 +43,6 @@ a {
 	width: 100%;
 	aspect-ratio: 1000/462;
 }
-.carousel-inner{
-	width: 100%;
-	height: auto;
-}
-.carousel-item{
-	width: 100%;
-	height: auto;
-}
 .w-100 {
 	width: 100%;
 	height: auto;	
