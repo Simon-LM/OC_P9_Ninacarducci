@@ -44,7 +44,7 @@ a:hover {
 .carousel {
 	object-fit: cover;
 	width: 100%;
-	aspect-ratio: 1000/462;
+	aspect-ratio: 1920/888;
 }
 .w-100 {
 	width: 100%;
