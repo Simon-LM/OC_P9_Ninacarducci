@@ -56,6 +56,7 @@
 		$(".gallery").on("click keypress", ".item-column", function (e) {
 			if (e.type === "click" || e.key === "Enter" || e.key === " ") {
 				e.preventDefault();
+				e.stopPropagation();
 				const imgElement = $(this).find(".gallery-item");
 				if (options.lightBox && imgElement.prop("tagName") === "IMG") {
 					$.fn.mauGallery.methods.openLightBox(imgElement, options.lightboxId);
@@ -67,6 +68,7 @@
 		$(".gallery").on("click keypress", ".nav-link", function (e) {
 			if (e.type === "click" || e.key === "Enter" || e.key === " ") {
 				e.preventDefault();
+				e.stopPropagation();
 				$.fn.mauGallery.methods.filterByTag.call(this);
 			}
 		});
@@ -78,6 +80,7 @@
 				(e.type === "keydown" && (e.key === "Enter" || e.key === " "))
 			) {
 				e.preventDefault();
+				e.stopPropagation();
 				if ($(this).hasClass("mg-prev")) {
 					$.fn.mauGallery.methods.prevImage(options.lightboxId);
 				} else {
@@ -91,6 +94,7 @@
 			if ($("#" + options.lightboxId).hasClass("show")) {
 				if (e.key === "ArrowLeft") {
 					e.preventDefault();
+					e.stopPropagation();
 					$.fn.mauGallery.methods.prevImage(options.lightboxId);
 				} else if (e.key === "ArrowRight") {
 					e.preventDefault();
@@ -153,11 +157,21 @@
 				element.addClass("img-fluid");
 			}
 		},
+
 		openLightBox(element, lightboxId) {
 			const modal = $(`#${lightboxId}`);
-			modal.find(".lightboxImage").attr("src", element.attr("src"));
+			const lightboxImage = modal.find(".lightboxImage");
+
+			// Transfert des attributs de l'image source
+			lightboxImage.attr({
+				src: element.attr("src"),
+				title: element.attr("title"),
+				width: "1920",
+				height: "auto",
+				loading: "eager",
+			});
+
 			modal.modal("toggle");
-			// Placer le focus sur le modal
 			modal.focus();
 		},
 
@@ -253,7 +267,7 @@
                 <div class="modal-body position-relative">
                 ${closeBtn}
                 ${prevBtn}
-                    <img class="lightboxImage img-fluid" alt="Contenu de l'image affichée dans la modale au clic"/>
+                    <img class="lightboxImage img-fluid"  width="1920" height="auto" alt="Contenu de l'image affichée dans la modale au clic"/>
                     ${nextBtn}
                 </div>
             </div>

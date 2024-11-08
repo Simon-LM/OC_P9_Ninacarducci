@@ -46,6 +46,9 @@ a:hover {
 .social-link img {
 	aspect-ratio: 1/1;
 	height: 1.2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .carousel {
 	object-fit: cover;
@@ -441,4 +444,7 @@ input[type="submit"] {
 	width: 0.6rem;
 	border: none;
 	cursor: pointer;
+}
+.title-extension {
+	opacity: 0.5;
 }
