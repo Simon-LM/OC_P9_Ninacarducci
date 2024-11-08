@@ -1,3 +1,9 @@
+/** @format */
+
+*:focus-visible {
+	outline: 2px solid #796d01 !important;
+	outline-offset: 2px;
+}
 body {
 	font-size: 1rem;
 	max-width: 1920px;
@@ -46,6 +52,25 @@ a:hover {
 	width: 100%;
 	aspect-ratio: 1920/888;
 }
+.arrows {
+	top: 46%;
+	border-radius: 50%;
+	height: 2.5rem;
+	width: 2.5rem;
+	opacity: 66%;
+	background: black;
+	/* outline: 2px solid black; */
+}
+.arrows:hover {
+	opacity: 80%;
+	/* outline: 2px solid black; */
+}
+.arrow-left {
+	left: 5%;
+}
+.arrow-right {
+	right: 5%;
+}
 .w-100 {
 	width: 100%;
 	height: auto;
@@ -59,7 +84,7 @@ a:hover {
 	position: relative;
 }
 .picture.left::before {
-	content: ' ';
+	content: " ";
 	background-color: #e5975f;
 	top: 15rem;
 	left: 0;
@@ -71,7 +96,7 @@ a:hover {
 .picture {
 	z-index: 0;
 	flex: 1;
-	margin: 0 1.25rem;	
+	margin: 0 1.25rem;
 }
 .picture img {
 	aspect-ratio: 1/1;
@@ -88,7 +113,7 @@ a:hover {
 	font-size: 1.875rem;
 }
 .about-me__introduction {
-	font-family: 'Spectral';
+	font-family: "Spectral";
 	font-weight: 800;
 	font-style: italic;
 	font-size: 1rem;
@@ -119,13 +144,15 @@ a:hover {
 .nav-pills .nav-link {
 	color: black;
 	cursor: pointer;
+	border-radius: 0;
+	margin: 0.2rem;
 }
 .item-column {
 	position: relative;
 	margin-bottom: 0 !important;
 	padding: 0;
 }
-.item-column::after{
+.item-column::after {
 	content: "";
 	display: block;
 	aspect-ratio: 1/1;
@@ -138,7 +165,7 @@ a:hover {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	padding: .5em;
+	padding: 0.5em;
 }
 .gallery img {
 	cursor: pointer;
@@ -151,14 +178,14 @@ a:hover {
 	padding: 3em 0;
 }
 .quote__text {
-	font-family: 'Spectral';
+	font-family: "Spectral";
 	font-style: italic;
 	font-weight: 300;
 	font-size: 2.5rem;
 	line-height: 1.2em;
 }
 .quote__author {
-	font-family: 'Spectral';
+	font-family: "Spectral";
 	font-weight: 800;
 	font-size: 1.375rem;
 }
@@ -204,12 +231,12 @@ a:hover {
 	display: flex;
 }
 .picture.right::before {
-	content: ' ';
+	content: " ";
 	background-color: #beb45a;
 	top: 15rem;
 	right: 0;
 	width: 30%;
-	height:calc(100% - 15rem);
+	height: calc(100% - 15rem);
 	position: absolute;
 	z-index: -1;
 }
@@ -240,7 +267,7 @@ form textarea {
 }
 input[type="submit"] {
 	background-color: #beb45a;
-	padding: .5em 1em;
+	padding: 0.5em 1em;
 }
 @media all and (max-width: 1180px) {
 	.picture {
@@ -252,13 +279,14 @@ input[type="submit"] {
 		width: 33%;
 		height: 50%;
 	}
-	.picture.right::before {		
+	.picture.right::before {
 		top: 50%;
 		right: 0;
 		width: 30%;
-		height:50%;
+		height: 50%;
 	}
-	#about,	#contact .container {
+	#about,
+	#contact .container {
 		align-items: center;
 	}
 	.about-me__title {
@@ -268,7 +296,8 @@ input[type="submit"] {
 	.about-me__introduction {
 		width: 100%;
 	}
-	#about-me h6, #about-me p {
+	#about-me h6,
+	#about-me p {
 		width: 100%;
 	}
 }
@@ -354,7 +383,8 @@ input[type="submit"] {
 	.service {
 		max-width: 90%;
 	}
-	#about,	#contact {
+	#about,
+	#contact {
 		padding: 2em;
 	}
 	form {
@@ -363,4 +393,52 @@ input[type="submit"] {
 	.picture {
 		width: 80%;
 	}
+}
+.modal-dialog {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+.button-close {
+	position: absolute !important;
+	top: 1.25rem;
+	right: 1.25rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	width: 1.2rem;
+	height: 1.2rem;
+	color: black;
+	background: white;
+	box-shadow: none !important;
+	font-size: 1rem;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.arrow-prev {
+	position: absolute;
+	top: 50%;
+	left: -1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: white;
+	height: 1.7rem;
+	width: 0.6rem;
+	border: none;
+	cursor: pointer;
+}
+.arrow-next {
+	position: absolute;
+	top: 50%;
+	right: -1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: white;
+	height: 1.7rem;
+	width: 0.6rem;
+	border: none;
+	cursor: pointer;
 }

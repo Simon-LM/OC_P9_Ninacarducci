@@ -1,3 +1,4 @@
 {
-    "minify.minifyExistingOnSave": true
+    "minify.minifyExistingOnSave": true,
+    "liveServer.settings.port": 5501
 }
