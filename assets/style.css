@@ -1,7 +1,7 @@
 /** @format */
 
 *:focus-visible {
-	outline: 2px solid #796d01 !important;
+	outline: 2px solid #897616 !important;
 	outline-offset: 2px;
 }
 body {
@@ -138,10 +138,16 @@ a:hover {
 	height: auto;
 	justify-content: center;
 }
+.nav-pills {
+	font-size: 1.2rem;
+}
+
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
 	color: white;
-	background-color: #796d01;
+	font-weight: 700;
+	/* background-color: #BEB45A; */
+	background-color: #897616;
 	border-radius: 0;
 }
 .nav-pills .nav-link {
@@ -417,6 +423,7 @@ input[type="submit"] {
 	background: white;
 	box-shadow: none !important;
 	font-size: 1rem;
+	font-weight: 700;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .arrow-prev {
@@ -446,5 +453,5 @@ input[type="submit"] {
 	cursor: pointer;
 }
 .title-extension {
-	opacity: 0.5;
+	opacity: 0.66;
 }
