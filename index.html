@@ -32,6 +32,7 @@
 			imagesrcset="
 				./assets/images/slider/Crosswalk_large.avif 1920w,
 				./assets/images/slider/Crosswalk_medium.avif 1000w,
+				./assets/images/slider/Crosswalk_smid.avif 800w,
 				./assets/images/slider/Crosswalk_small.avif 650w
 			"
 			imagesizes="(max-width: 1920px) 100vw, 1920px"
@@ -100,57 +101,35 @@
 				data-bs-ride="carousel">				
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<!-- <img
-							fetchpriority="high"
-							src="./assets/images/slider/Crosswalk_large.webp"
-							srcset="
-								./assets/images/slider/Crosswalk_large.webp  1920w,
-								./assets/images/slider/Crosswalk_medium.webp 1000w,
-								./assets/images/slider/Crosswalk_small.webp   650w
-							"
-							sizes="100vw"
-							class="d-block w-100"
-							alt="Photo homme qui traverse un passage piéton"
-							title="Instant capturé de la vie urbaine"
-							loading="eager"
-							width="1920"
-							height="888" /> -->
-														<picture>
-								<source
-									type="image/avif"
-									srcset="
-										./assets/images/slider/Crosswalk_large.avif 1920w,
-										./assets/images/slider/Crosswalk_medium.avif 1000w,
-										./assets/images/slider/Crosswalk_small.avif 650w
+
+						<picture>
+							<source
+								type="image/avif"
+								srcset="									./assets/images/slider/Crosswalk_large.avif 1920w,
+									./assets/images/slider/Crosswalk_medium.avif 1000w,
+									./assets/images/slider/Crosswalk_smid.avif 800w,
+									./assets/images/slider/Crosswalk_small.avif 650w
+										"
+								sizes="(max-width: 1920px) 100vw, 1920px"
+							/>
+							<img
+								src="./assets/images/slider/Crosswalk_large.webp"
+								srcset="
+									./assets/images/slider/Crosswalk_large.webp 1920w,
+									./assets/images/slider/Crosswalk_medium.webp 1000w,
+									./assets/images/slider/Crosswalk_smid.webp 800w,
+									./assets/images/slider/Crosswalk_small.webp 650w
 									"
-									sizes="(max-width: 1920px) 100vw, 1920px"
-								/>
-								<source
-									type="image/webp"
-									srcset="
-										./assets/images/slider/Crosswalk_large.webp 1920w,
-										./assets/images/slider/Crosswalk_medium.webp 1000w,
-										./assets/images/slider/Crosswalk_small.webp 650w
-									"
-									sizes="(max-width: 1920px) 100vw, 1920px"
-								/>
-								<img
-									src="./assets/images/slider/Crosswalk_large.jpg"
-									srcset="
-										./assets/images/slider/Crosswalk_large.jpg 1920w,
-										./assets/images/slider/Crosswalk_medium.jpg 1000w,
-										./assets/images/slider/Crosswalk_small.jpg 650w
-									"
-									sizes="(max-width: 1920px) 100vw, 1920px"
-									class="d-block w-100"
-									alt="Photo homme qui traverse un passage piéton"
-									title="Instant capturé de la vie urbaine"
-									loading="eager"
-									width="1920"
-									height="888"
-									fetchpriority="high"
-								/>
-							</picture>
+								sizes="(max-width: 1920px) 100vw, 1920px"
+								class="d-block w-100"
+								alt="Photo homme qui traverse un passage piéton"
+								title="Instant capturé de la vie urbaine"
+								loading="eager"
+								width="1920"
+								height="888"
+								fetchpriority="high"
+							/>
+						</picture>
 					</div>
 					<div class="carousel-item">
 						<img
@@ -159,6 +138,7 @@
 							srcset="
 								./assets/images/slider/Crowd_large.webp  1920w,
 								./assets/images/slider/Crowd_medium.webp 1000w,
+								./assets/images/slider/Crowd_smid.webp   800w,
 								./assets/images/slider/Crowd_small.webp   650w
 							"
 							sizes="100vw"
@@ -167,8 +147,8 @@
 							title="Ambiance électrique lors d'un concert"
 							loading="eager"
 							width="1920"
-    height="888"
-							/>
+							height="888"
+						/>
 					</div>
 					<div class="carousel-item">
 						<img
@@ -177,6 +157,7 @@
 							srcset="
 								./assets/images/slider/Married_large.webp  1920w,
 								./assets/images/slider/Married_medium.webp 1000w,
+								./assets/images/slider/Married_smid.webp   800w,
 								./assets/images/slider/Married_small.webp   650w
 							"
 							sizes="100vw"
@@ -185,8 +166,8 @@
 							title="Union de deux âmes en célébration"
 							loading="eager" 
 							width="1920"
-    height="888"
-							/>
+    						height="888"
+						/>
 					</div>
 				</div>
 				<button
