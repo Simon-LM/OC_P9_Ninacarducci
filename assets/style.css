@@ -1,17 +1,11 @@
 /** @format */
 
+* {
+	font-family: "Inter";
+}
 *:focus-visible {
 	outline: 2px solid #897616 !important;
 	outline-offset: 2px;
-}
-body {
-	font-size: 1rem;
-	max-width: 1920px;
-	height: auto;
-	margin: auto;
-}
-* {
-	font-family: "Inter";
 }
 a {
 	text-decoration: none;
@@ -19,6 +13,16 @@ a {
 }
 a:hover {
 	color: #000;
+	cursor: pointer;
+}
+button {
+	cursor: pointer;
+}
+body {
+	font-size: 1rem;
+	max-width: 1920px;
+	height: auto;
+	margin: auto;
 }
 .top-header {
 	background-color: white;
@@ -30,7 +34,7 @@ a:hover {
 	padding: 1.875rem 6.25rem;
 	align-items: center;
 }
-.top-header .name {
+.name {
 	display: flex;
 	flex: auto;
 	height: auto;
@@ -43,7 +47,7 @@ a:hover {
 	margin-bottom: 0;
 	gap: 1em;
 }
-.social-link img {
+.social-link_icon {
 	aspect-ratio: 1/1;
 	height: 1.2rem;
 	display: flex;
@@ -101,7 +105,7 @@ a:hover {
 	flex: 1;
 	margin: 0 1.25rem;
 }
-.picture img {
+.picture__about {
 	aspect-ratio: 1/1;
 	width: 100%;
 }
@@ -120,12 +124,14 @@ a:hover {
 	font-weight: 800;
 	font-style: italic;
 	font-size: 1rem;
+	line-height: 1.5em;
 	width: 60%;
 }
 #about-me p {
 	width: 80%;
 	height: auto;
 	font-size: 0.875rem;
+	line-height: 1.5em;
 }
 .title {
 	width: 100%;
@@ -152,7 +158,6 @@ a:hover {
 }
 .nav-pills .nav-link {
 	color: black;
-	cursor: pointer;
 	border-radius: 0;
 	margin: 0.2rem;
 }
@@ -176,9 +181,7 @@ a:hover {
 	object-fit: cover;
 	padding: 0.5em;
 }
-.gallery img {
-	cursor: pointer;
-}
+
 .quote {
 	font-style: italic;
 	width: 70%;
@@ -372,12 +375,12 @@ input[type="submit"] {
 		flex-direction: column;
 		padding-inline: 0;
 	}
-	.top-header .nav,
-	.top-header .nav ul {
+	.nav,
+	.nav ul {
 		width: 100%;
 		padding: 0;
 	}
-	.top-header .nav li {
+	.nav li {
 		flex: 1;
 		padding: 1em inherit;
 		text-align: center;
@@ -437,7 +440,6 @@ input[type="submit"] {
 	height: 1.7rem;
 	width: 0.6rem;
 	border: none;
-	cursor: pointer;
 }
 .arrow-next {
 	position: absolute;
@@ -450,7 +452,6 @@ input[type="submit"] {
 	height: 1.7rem;
 	width: 0.6rem;
 	border: none;
-	cursor: pointer;
 }
 .title-extension {
 	opacity: 0.66;
