@@ -1,5 +1,11 @@
 {
-  "dependencies": {
-    "sharp": "^0.33.2"
-  }
+	"dependencies": {
+		"sharp": "^0.33.2"
+	},
+	"devDependencies": {
+		"purgecss": "^7.0.2"
+	},
+	"scripts": {
+		"purgecss": "purgecss --css assets/bootstrap/bootstrap.min.css --content index.html assets/scripts.min.js --output assets/css/"
+	}
 }

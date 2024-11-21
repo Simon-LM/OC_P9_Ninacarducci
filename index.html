@@ -13,7 +13,7 @@
 			content="Photographe professionnelle à Bordeaux, spécialisée dans les portraits, mariages, concerts et services aux entreprises." />
 		<meta name="theme-color" content="#e5975f" />
 		<link rel="manifest" href="./manifest.webmanifest" />
-		<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
+		<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="./assets/style.min.css" />
 		<link
 			rel="preload"
@@ -36,9 +36,15 @@
 		<link
 			rel="preload"
 			as="image"
+			href="./assets/images/slider/Crosswalk_smid.avif"
+			type="image/avif"
+			media="(min-width: 650px) and (max-width: 800px)" />
+		<link
+			rel="preload"
+			as="image"
 			href="./assets/images/slider/Crosswalk_medium.avif"
 			type="image/avif"
-			media="(min-width: 650px) and (max-width: 1000px)" />
+			media="(min-width: 800px) and (max-width: 1000px)" />
 		<link
 			rel="preload"
 			as="image"
@@ -114,6 +120,7 @@
 								type="image/avif"
 								srcset="
 									./assets/images/slider/Crosswalk_small.avif   650w,
+									./assets/images/slider/Crosswalk_smid.avif    800w,
 									./assets/images/slider/Crosswalk_medium.avif 1000w,
 									./assets/images/slider/Crosswalk_large.avif  1920w
 								"
@@ -122,6 +129,7 @@
 								type="image/webp"
 								srcset="
 									./assets/images/slider/Crosswalk_small.webp   650w,
+									./assets/images/slider/Crosswalk_smid.webp    800w,
 									./assets/images/slider/Crosswalk_medium.webp 1000w,
 									./assets/images/slider/Crosswalk_large.webp  1920w
 								"
@@ -130,6 +138,7 @@
 								src="./assets/images/slider/Crosswalk_large.webp"
 								srcset="
 									./assets/images/slider/Crosswalk_small.webp   650w,
+									./assets/images/slider/Crosswalk_smid.webp    800w,
 									./assets/images/slider/Crosswalk_medium.webp 1000w,
 									./assets/images/slider/Crosswalk_large.webp  1920w
 								"
@@ -144,29 +153,32 @@
 						</picture>
 					</div>
 					<div class="carousel-item">
-						<picture>
+						<picture						purgecss --css assets/bootstrap/bootstrap.min.css --content index.html assets/scripts.min.js --output assets/css/>
 							<source
 								type="image/avif"
 								srcset="
-									./assets/images/slider/Crowd_large.avif  1920w,
+									./assets/images/slider/Crowd_small.avif   650w,
+									./assets/images/slider/Crowd_smid.avif    800w,
 									./assets/images/slider/Crowd_medium.avif 1000w,
-									./assets/images/slider/Crowd_small.avif   650w
+									./assets/images/slider/Crowd_large.avif  1920w
 								"
 								sizes="100vw" />
 							<source
 								type="image/webp"
 								srcset="
-									./assets/images/slider/Crowd_large.webp  1920w,
+									./assets/images/slider/Crowd_small.webp   650w,
+									./assets/images/slider/Crowd_smid.webp    800w,
 									./assets/images/slider/Crowd_medium.webp 1000w,
-									./assets/images/slider/Crowd_small.webp   650w
+									./assets/images/slider/Crowd_large.webp  1920w
 								"
 								sizes="100vw" />
 							<img
 								src="./assets/images/slider/Crowd_large.webp"
 								srcset="
-									./assets/images/slider/Crowd_large.webp  1920w,
+									./assets/images/slider/Crowd_small.webp   650w,
+									./assets/images/slider/Crowd_smid.webp    800w,
 									./assets/images/slider/Crowd_medium.webp 1000w,
-									./assets/images/slider/Crowd_small.webp   650w
+									./assets/images/slider/Crowd_large.webp  1920w
 								"
 								sizes="100vw"
 								class="d-block w-100"
@@ -183,25 +195,28 @@
 							<source
 								type="image/avif"
 								srcset="
-									./assets/images/slider/Married_large.avif  1920w,
+									./assets/images/slider/Married_small.avif   650w,
+									./assets/images/slider/Married_smid.avif    800w,
 									./assets/images/slider/Married_medium.avif 1000w,
-									./assets/images/slider/Married_small.avif   650w
+									./assets/images/slider/Married_large.avif  1920w
 								"
 								sizes="100vw" />
 							<source
 								type="image/webp"
 								srcset="
-									./assets/images/slider/Married_large.webp  1920w,
+									./assets/images/slider/Married_small.webp   650w,
+									./assets/images/slider/Married_smid.webp    800w,
 									./assets/images/slider/Married_medium.webp 1000w,
-									./assets/images/slider/Married_small.webp   650w
+									./assets/images/slider/Married_large.webp  1920w
 								"
 								sizes="100vw" />
 							<img
 								src="./assets/images/slider/Married_large.webp"
 								srcset="
-									./assets/images/slider/Married_large.webp  1920w,
-									./assets/images/slider/Married_medium.webp 1000w,
 									./assets/images/slider/Married_small.webp   650w
+									./assets/images/slider/Married_smid.webp    800w,
+									./assets/images/slider/Married_medium.webp 1000w,
+									./assets/images/slider/Married_large.webp  1920w
 								"
 								sizes="100vw"
 								class="d-block w-100"
@@ -256,9 +271,9 @@
 						class="picture__about"
 						src="./assets/images/Nina_large.webp"
 						srcset="
-							./assets/images/Nina_large.webp  560w,
+							./assets/images/Nina_small.webp  280w,
 							./assets/images/Nina_medium.webp 420w,
-							./assets/images/Nina_small.webp  280w
+							./assets/images/Nina_large.webp  560w
 						"
 						alt="Portrait de Nina Carducci"
 						title="Nina Carducci, photographe professionnelle à Bordeaux"
