@@ -16,6 +16,8 @@ a:hover {
 	cursor: pointer;
 }
 button {
+	border: none;
+	background: none;
 	cursor: pointer;
 }
 body {
@@ -139,6 +141,7 @@ body {
 	text-align: center;
 	padding: 2em 0;
 }
+
 .gallery .nav {
 	width: 100%;
 	height: auto;
