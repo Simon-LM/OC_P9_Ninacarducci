@@ -269,19 +269,35 @@
 			</div>
 			<div id="about">
 				<div class="picture left">
-					<img
+										<picture>
+					  <source
+						type="image/avif"
+						srcset="
+						  ./assets/images/Nina_small.avif 280w,
+						  ./assets/images/Nina_medium.avif 420w,
+						  ./assets/images/Nina_large.avif 560w
+						"
+						sizes="(max-width: 560px) 100vw, 560px"
+					  />
+					  <source
+						type="image/webp"
+						srcset="
+						  ./assets/images/Nina_small.webp 280w,
+						  ./assets/images/Nina_medium.webp 420w,
+						  ./assets/images/Nina_large.webp 560w
+						"
+						sizes="(max-width: 560px) 100vw, 560px"
+					  />
+					  <img
 						class="picture__about"
 						src="./assets/images/Nina_large.webp"
-						srcset="
-							./assets/images/Nina_small.webp  280w,
-							./assets/images/Nina_medium.webp 420w,
-							./assets/images/Nina_large.webp  560w
-						"
 						alt="Portrait de Nina Carducci"
 						title="Nina Carducci, photographe professionnelle à Bordeaux"
 						loading="eager"
 						width="560"
-						height="auto" />
+						height="auto"
+					  />
+					</picture>
 				</div>
 				<div id="about-me">
 					<h2 class="about-me__title">A propos de moi</h2>
@@ -497,18 +513,35 @@
 					</form>
 				</div>
 				<div class="picture right">
-					<img
-						src="./assets/images/Camera_large.webp"
+										<picture>
+					  <source
+						type="image/avif"
 						srcset="
-							./assets/images/Camera_large.webp  560w,
-							./assets/images/Camera_medium.webp 420w,
-							./assets/images/Camera_small.webp  280w
+						  ./assets/images/Camera_small.avif 280w,
+						  ./assets/images/Camera_medium.avif 420w,
+						  ./assets/images/Camera_large.avif 560w
 						"
+						sizes="(max-width: 560px) 100vw, 560px"
+					  />
+					  <source
+						type="image/webp"
+						srcset="
+						  ./assets/images/Camera_small.webp 280w,
+						  ./assets/images/Camera_medium.webp 420w,
+						  ./assets/images/Camera_large.webp 560w
+						"
+						sizes="(max-width: 560px) 100vw, 560px"
+					  />
+					  <img
+						class="picture__about"
+						src="./assets/images/Camera_large.webp"
 						alt="Photo d'un appareil photo"
 						title="L'outil pour immortaliser vos souvenirs"
 						loading="lazy"
 						width="560"
-						height="auto" />
+						height="auto"
+					  />
+					</picture>
 				</div>
 			</div>
 		</footer>
