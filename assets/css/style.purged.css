@@ -119,7 +119,8 @@ body {
 	flex: 1;
 	margin: 0 1.25rem;
 }
-.picture__about {
+.picture__about,
+.picture__contact {
 	aspect-ratio: 1/1;
 	width: 100%;
 }
